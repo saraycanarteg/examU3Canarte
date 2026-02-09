@@ -1,0 +1,136 @@
+.product-list-section {
+  margin-top: 20px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #000;
+}
+
+.list-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+  font-style: italic;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.products-table thead {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.products-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.products-table tbody tr {
+  border: 1px solid #ddd;
+  transition: background-color 0.2s;
+}
+
+.products-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.products-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.btn-delete {
+  background-color: #fff;
+  color: #c62828;
+  border: 1px solid #c62828;
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 3px;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #c62828;
+  color: white;
+}
+
+.table-footer {
+  padding: 15px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-top: 2px solid #000;
+}
+
+.total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.total-value {
+  font-size: 18px;
+  color: #000;
+  min-width: 120px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .list-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .btn-add {
+    width: 100%;
+  }
+
+  .products-table {
+    font-size: 12px;
+  }
+
+  .products-table th,
+  .products-table td {
+    padding: 8px;
+  }
+
+  .total-row {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+  }
+}
