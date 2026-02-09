@@ -39,7 +39,7 @@ router.get('/search/:productId', async (req, res) => {
   }
 });
 
-router.post('/calculate', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const { productId, name, brand, provider, price } = req.body;
     
