@@ -38,7 +38,7 @@ router.get('/search/:productId', async (req, res) => {
     });
   }
 });
-
+/*
 router.post('/', async (req, res) => {
   try {
     const { productId, name, brand, provider, price } = req.body;
@@ -78,6 +78,6 @@ router.post('/', async (req, res) => {
       message: error.message
     });
   }
-});
+});*/
 
 module.exports = router;
